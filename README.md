@@ -3,8 +3,10 @@
 A Chrome/Edge extension created by kgsensei.
 
 ---
+
 ![Get AccessibilityPlus on Edge](/promo/onMSFT.png)
 ![Get AccessibilityPlus on Chrome](/promo/onChrome.png)
+
 ---
 
 ## Do you have a hard time reading text on websites?
