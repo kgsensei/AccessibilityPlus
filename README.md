@@ -4,7 +4,7 @@ A Chrome/Edge extension created by kgsensei.
 
 ---
 
-![Get AccessibilityPlus on Edge](/promo/onMSFT.png)
+[![Get AccessibilityPlus on Edge](/promo/onMSFT.png)](https://microsoftedge.microsoft.com/addons/detail/accessibilityplus/njkccdinalldfhfbejhgoeilmbbcalen)
 [![Get AccessibilityPlus on Chrome](/promo/onChrome.png)](https://chrome.google.com/webstore/detail/accessibilityplus/mkdmfebahbjekamaflbckpbhjgmfnkjo)
 
 ---
