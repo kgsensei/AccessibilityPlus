@@ -1,0 +1,53 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: rgb(25, 35, 35);
+	color: rgb(255, 255, 255);
+	font-family: sans-serif;
+}
+
+#firstBlock {
+	position: relative;
+	width: 100%;
+}
+
+.medBlock {
+	position: relative;
+	width: 100%;
+}
+
+a {
+	color: rgb(0, 180, 255);
+}
+
+.noUnderlineLink {
+	text-decoration: none;	
+}
+
+.pads {
+	padding: 8%;
+	font-size: 1.5vw;
+}
+
+#firstPad {
+	padding: 15%;
+}
+
+.storeImage {
+	height: 150px;
+}
+
+@media only screen and (max-device-width: 915px) {
+	.pads {
+		padding: 10% 4% 10% 4%;
+		font-size: 2vw;
+	}
+	
+	#firstPad {
+		padding: 40% 10% 40% 10%;
+	}
+
+	.storeImage {
+		height: 125px;
+	}
+}
