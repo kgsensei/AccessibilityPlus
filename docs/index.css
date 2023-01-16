@@ -34,7 +34,7 @@ a {
 }
 
 .storeImage {
-	height: 150px;
+	height: 80px;
 }
 
 @media only screen and (max-device-width: 915px) {
