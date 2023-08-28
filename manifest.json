@@ -13,7 +13,8 @@
 		"500": "icon_500.png"
 	},
 	"permissions": [
-		"scripting"
+		"scripting",
+        "activeTab"
 	],
 	"host_permissions": [
 		"<all_urls>"
