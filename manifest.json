@@ -3,7 +3,7 @@
 	"name": "AccessibilityPlus",
 	"author": "kgsensei",
 	"description": "An extension designed to help dyslexic people read text on websites.",
-	"version": "1.0",
+	"version": "1.1",
 	"action": {
 		"default_icon": "icon_500.png",
 		"default_popup": "dash.html"
@@ -13,7 +13,6 @@
 		"500": "icon_500.png"
 	},
 	"permissions": [
-		"tabs",
 		"scripting"
 	],
 	"host_permissions": [
