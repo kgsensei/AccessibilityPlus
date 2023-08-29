@@ -14,12 +14,32 @@
 	},
 	"permissions": [
 		"scripting",
-        "activeTab"
+        "storage"
 	],
 	"host_permissions": [
 		"<all_urls>"
 	],
 	"background": {
     	"service_worker": "background.js"
-  	}
+  	},
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "css": [
+                "resources/ap-font-import.css"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "resources": [
+                "resources/dyslexia.woff"
+            ]
+        }
+    ]
 }

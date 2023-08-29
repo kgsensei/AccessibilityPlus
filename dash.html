@@ -1,113 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 	<head>
 		<title>AccessibilityPlus</title>
-		<link rel="stylesheet" href="./dash/dash.css">
+        <link rel="stylesheet" href="./dash/bootstrap.min.css">
+        <script src="./dash/bootstrap.js"></script>
 	</head>
 	<body>
-		<div id="titleBlock">
-			<img src="./icon_500.png" title="AccessibilityPlus Icon">
-			<div>AccessibilityPlus</div>
+		<div class="p-2 d-flex">
+			<img src="./icon_500.png" title="AccessibilityPlus Icon" width="35" height="35">
+			<h1 class="ps-3 pt-1 h3">AccessibilityPlus</h1>
 		</div>
-		<div class="section">
-			<div class="header">Text Background Color:</div>
-			<div class="optContainer">
-				<div class="option" ap-type="bg" ap-data="189,181,165" style="background-color:rgb(189,181,165);"></div>
-				<div class="option" ap-type="bg" ap-data="133,234,113" style="background-color:rgb(133,234,113);"></div>
-				<div class="option" ap-type="bg" ap-data="39,123,182" style="background-color:rgb(39,123,182);"></div>
-				<div class="option" ap-type="bg" ap-data="52,52,52" style="background-color:rgb(54,54,54);"></div>
-				<div class="option" ap-type="bg" ap-data="20,20,20" style="background-color:rgb(20,20,20);"></div>
+		<div class="p-2">
+			<h2 class="h4 mt-1">Text Background Color:</h2>
+			<div class="btn-group" role="group">
+				<button class="btn option" ap-type="bg" ap-data="189,181,165" style="background-color:rgb(189,181,165);">A</button>
+				<button class="btn option" ap-type="bg" ap-data="133,234,113" style="background-color:rgb(133,234,113);">B</button>
+				<button class="btn option" ap-type="bg" ap-data="39,123,182" style="background-color:rgb(39,123,182);">C</button>
+				<button class="btn option" ap-type="bg" ap-data="52,52,52" style="background-color:rgb(54,54,54);">D</button>
+				<button class="btn option" ap-type="bg" ap-data="20,20,45" style="background-color:rgb(20,20,45);">E</button>
+                <button class="btn option" ap-type="bg" ap-data="45,20,20" style="background-color:rgb(45,20,20);">F</button>
+                <button class="btn option" ap-type="bg" ap-data="0,0,0" style="background-color:rgb(0,0,0);">G</button>
 			</div>
-			<div class="header">Text Foreground Color:</div>
-			<div class="optContainer">
-				<div class="option" ap-type="fg" ap-data="255,255,255" style="background-color:rgb(255,255,255);"></div>
-				<div class="option" ap-type="fg" ap-data="255,0,0" style="background-color:rgb(255,0,0);"></div>
-				<div class="option" ap-type="fg" ap-data="0,255,0" style="background-color:rgb(0,255,0);"></div>
-				<div class="option" ap-type="fg" ap-data="0,0,255" style="background-color:rgb(0,0,255);"></div>
-				<div class="option" ap-type="fg" ap-data="0,0,0" style="background-color:rgb(0,0,0);"></div>
+			<h2 class="h4 mt-1">Text Foreground Color:</h2>
+			<div class="btn-group" role="group">
+				<button class="btn option" ap-type="fg" ap-data="255,255,255" style="background-color:rgb(255,255,255);">A</button>
+                <button class="btn option" ap-type="fg" ap-data="205,205,205" style="background-color:rgb(205,205,205);">B</button>
+				<button class="btn option" ap-type="fg" ap-data="255,0,0" style="background-color:rgb(255,0,0);">C</button>
+				<button class="btn option" ap-type="fg" ap-data="0,255,0" style="background-color:rgb(0,255,0);">D</button>
+				<button class="btn option" ap-type="fg" ap-data="0,0,255" style="background-color:rgb(0,0,255);">E</button>
+                <button class="btn option" ap-type="fg" ap-data="50,50,50" style="background-color:rgb(50,50,50);">F</button>
+				<button class="btn option" ap-type="fg" ap-data="0,0,0" style="background-color:rgb(0,0,0);">G</button>
 			</div>
-			<div class="header">Link Foreground Color:</div>
-			<div class="optContainer">
-				<div class="option" ap-type="ln" ap-data="205,205,205" style="background-color:rgb(205,205,205);"></div>
-				<div class="option" ap-type="ln" ap-data="205,50,50" style="background-color:rgb(205,50,50);"></div>
-				<div class="option" ap-type="ln" ap-data="50,205,50" style="background-color:rgb(50,205,50);"></div>
-				<div class="option" ap-type="ln" ap-data="50,50,205" style="background-color:rgb(50,50,205);"></div>
-				<div class="option" ap-type="ln" ap-data="50,50,50" style="background-color:rgb(50,50,50);"></div>
+			<h2 class="h4 mt-1">Link Foreground Color:</h2>
+			<div class="btn-group" role="group">
+				<button class="btn option" ap-type="ln" ap-data="205,205,205" style="background-color:rgb(205,205,205);">A</button>
+				<button class="btn option" ap-type="ln" ap-data="205,50,50" style="background-color:rgb(205,50,50);">B</button>
+				<button class="btn option" ap-type="ln" ap-data="50,205,50" style="background-color:rgb(50,205,50);">C</button>
+				<button class="btn option" ap-type="ln" ap-data="50,50,205" style="background-color:rgb(50,50,205);">D</button>
+				<button class="btn option" ap-type="ln" ap-data="50,50,50" style="background-color:rgb(50,50,50);">E</button>
+                <button class="btn option" ap-type="ln" ap-data="0,180,255" style="background-color:rgb(0,180,255);">F</button>
+                <button class="btn option" ap-type="ln" ap-data="255,180,0" style="background-color:rgb(255,180,0);">G</button>
 			</div>
-			<div class="header">Text Font Size:</div>
-			<div class="optContainer">
-				<div class="option" ap-type="fs" ap-data="14" style="font-size:14px;">
-					<div class="centerText">
-						14
-					</div>
-				</div>
-				<div class="option" ap-type="fs" ap-data="16" style="font-size:16px;">
-					<div class="centerText">
-						16
-					</div>
-				</div>
-				<div class="option" ap-type="fs" ap-data="18" style="font-size:18px;">
-					<div class="centerText">
-						18
-					</div>
-				</div>
-				<div class="option" ap-type="fs" ap-data="20" style="font-size:20px;">
-					<div class="centerText">
-						20
-					</div>
-				</div>
-				<div class="option" ap-type="fs" ap-data="22" style="font-size:22px;">
-					<div class="centerText">
-						22
-					</div>
-				</div>
-				<div class="option" ap-type="fs" ap-data="24" style="font-size:24px;">
-					<div class="centerText">
-						24
-					</div>
-				</div>
-				<div class="option" ap-type="fs" ap-data="26" style="font-size:26px;">
-					<div class="centerText">
-						26
-					</div>
-				</div>
-				<div class="option" ap-type="fs" ap-data="28" style="font-size:28px;">
-					<div class="centerText">
-						28
-					</div>
-				</div>
+			<h2 class="h4 mt-1">Text Font Size:</h2>
+			<div class="btn-group btn-group-sm" role="group">
+				<button class="btn btn-outline-primary option" ap-type="fs" ap-data="14">
+                    14px
+				</button>
+				<button class="btn btn-outline-primary option" ap-type="fs" ap-data="16">
+					16px
+				</button>
+				<button class="btn btn-outline-primary option" ap-type="fs" ap-data="18">
+					18px
+				</button>
+				<button class="btn btn-outline-primary option" ap-type="fs" ap-data="20">
+					20px
+				</button>
+				<button class="btn btn-outline-primary option" ap-type="fs" ap-data="22">
+					22px
+				</button>
+				<button class="btn btn-outline-primary option" ap-type="fs" ap-data="24">
+					24px
+				</button>
+				<button class="btn btn-outline-primary option" ap-type="fs" ap-data="26">
+					26px
+				</button>
+				<button class="btn btn-outline-primary option" ap-type="fs" ap-data="28">
+					28px
+				</button>
 			</div>
-            <div class="header">Text Font Family:</div>
-            <div class="optContainer">
-				<div class="option" ap-type="ff" ap-data="A" style="font-size:18px;">
-					<div class="centerText">
-						Arial
-					</div>
-				</div>
-				<div class="option" ap-type="ff" ap-data="B" style="font-size:18px;">
-					<div class="centerText">
-						Dyslexia
-					</div>
-				</div>
+            <h2 class="h4 mt-1">Text Font Family:</h2>
+            <div class="btn-group btn-group-sm" role="group">
+				<button class="btn btn-outline-primary option" ap-type="ff" ap-data="Arial">
+					Arial
+				</button>
+				<button class="btn btn-outline-primary option" ap-type="ff" ap-data="ap_custom_dyslexiaFont">
+					Dyslexia
+				</button>
+                <button class="btn btn-outline-primary option" ap-type="ff" ap-data='"Comic Sans MS", "Comic Sans", cursive'>
+					Comic Sans
+                </button>
 			</div>
-			<div class="header">Presets:</div>
-			<div class="optContainer">
-				<div class="option" ap-type="ps" ap-data="A" style="font-size:18px;">
-					<div class="centerText">
-						A
-					</div>
-				</div>
-				<div class="option" ap-type="ps" ap-data="B" style="font-size:18px;">
-					<div class="centerText">
-						B
-					</div>
-				</div>
-				<div class="option" ap-type="ps" ap-data="C" style="font-size:18px;">
-					<div class="centerText">
-						C
-					</div>
-				</div>
+			<h2 class="h4 mt-1">Presets:</h2>
+			<div class="btn-group btn-group-sm" role="group">
+				<button class="btn btn-outline-primary option" ap-type="ps" ap-data="A">
+					Green
+				</button>
+				<button class="btn btn-outline-primary option" ap-type="ps" ap-data="B">
+					Dark
+				</button>
+				<button class="btn btn-outline-primary option" ap-type="ps" ap-data="C">
+					Light
+				</button>
+                <button class="btn btn-outline-primary option" ap-type="ps" ap-data="D">
+					Blue
+				</button>
+                <button class="btn btn-outline-primary option" ap-type="ps" ap-data="E">
+					Orange
+				</button>
 			</div>
+            <h2 class="h4 mt-1">Remember Controls:</h2>
+            <div class="btn-group btn-group-sm" role="group">
+                <button class="btn btn-outline-primary" id="remember">
+                    Remember My Changes
+                </button>
+                <button class="btn btn-outline-primary" id="forget">
+                    Erase My Changes
+                </button>
+            </div>
+            <div class="position-fixed mt-2 top-0 start-50 translate-middle-x alert alert-primary align-items-center w-75 p-1 fade hide" role="alert" id="toast"></div>
 		</div>
 		<script src="./dash/apPlugin.js"></script>
 	</body>
