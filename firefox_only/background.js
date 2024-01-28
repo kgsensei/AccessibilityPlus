@@ -1,15 +1,15 @@
 const storage = {
-    getItem: async (key) => {return (await chrome.storage.local.get(key))[key]},
-    setItem: (key, val) => {chrome.storage.local.set({[key]:val})},
-    removeItem: (keys) => {chrome.storage.local.remove(keys)}
+    getItem: async (key) => {return (await browser.storage.local.get(key))[key]},
+    setItem: (key, val) => browser.storage.local.set({ [key]: val }),
+    removeItem: (keys) => browser.storage.local.remove(keys)
 }
 
 function update(type, data) {
     const arrTag = (tag) => {
         return Array.from(document.getElementsByTagName(tag))
     }
-
-	// Background color
+    
+    // Background color
     if(type == 'bg') {
 		document.body.style.backgroundColor = `rgb(${data})`
 		let e = arrTag('div')
@@ -18,7 +18,6 @@ function update(type, data) {
         e = e.concat(arrTag('h2'))
         e = e.concat(arrTag('h3'))
         e = e.concat(arrTag('h4'))
-        console.log(e)
 		for(let i = 0; i < e.length; i++) {
 			e[i].style.backgroundColor = `rgb(${data})`
 		}
@@ -70,7 +69,7 @@ function update(type, data) {
 }
 
 async function getDomain() {
-    let x = await chrome.tabs.query({active: true})
+    let x = await browser.tabs.query({active: true})
     if(x[0].url == undefined) {
         return false
     }
@@ -83,6 +82,7 @@ async function removeTheme() {
     if(x == false) {
         return
     }
+
     storage.removeItem(x)
 }
 
@@ -91,24 +91,30 @@ async function saveTheme(data) {
     if(x == false) {
         return
     }
+
     let d = JSON.stringify(data)
     storage.setItem(x, d)
 }
 
 async function loadSaved(i) {
     let u = await getDomain()
+
     storage.setItem("currentSite", u || false)
+
     if(u == false) {
         return
     }
+
     let d = await storage.getItem(u)
     if(d == undefined) {
         return
     }
+
     d = JSON.parse(d)
+
     for (const t in d) {
         if(t != null) {
-            chrome.scripting.executeScript({
+            browser.scripting.executeScript({
                 target: {
                     tabId: i,
                     allFrames: true
@@ -120,8 +126,8 @@ async function loadSaved(i) {
     }
 }
 
-chrome.runtime.onMessage.addListener(async (data) => {
-	let x = await chrome.tabs.query({active: true})
+browser.runtime.onMessage.addListener(async (data) => {
+	let x = await browser.tabs.query({active: true})
 	let ap = JSON.parse(data)
     if(ap.type == "remember") {
         if(ap.data == true) {
@@ -130,7 +136,7 @@ chrome.runtime.onMessage.addListener(async (data) => {
             removeTheme()
         }
     } else {
-        chrome.scripting.executeScript({
+        browser.scripting.executeScript({
             target: {
                 tabId: x[0].id,
                 allFrames: true
@@ -141,7 +147,7 @@ chrome.runtime.onMessage.addListener(async (data) => {
     }
 })
 
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if(changeInfo.status == 'complete') {
         loadSaved(tabId)
     }

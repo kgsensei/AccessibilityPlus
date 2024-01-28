@@ -9,18 +9,23 @@
 		"default_popup": "dash.html"
 	},
 	"icons": {
-		"128": "icon_128.png",
+        "128": "icon_128.png",
 		"500": "icon_500.png"
 	},
 	"permissions": [
 		"scripting",
-        "storage"
+        "activeTab",
+        "storage",
+        "tabs"
 	],
 	"host_permissions": [
-		"<all_urls>"
+		"<all_urls>",
+        "*://*/*"
 	],
 	"background": {
-    	"service_worker": "background.js"
+    	"scripts": [
+            "background.js"
+        ]
   	},
     "content_scripts": [
         {
@@ -41,5 +46,10 @@
                 "resources/dyslexia.woff"
             ]
         }
-    ]
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "accessibilityplus@kgsensei.dev"
+        }
+    }
 }
