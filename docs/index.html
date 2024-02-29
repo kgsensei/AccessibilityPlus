@@ -26,69 +26,64 @@
 		<script async src="https://kgsensei.dev/js/ka.js"></script>
 
 		<link rel="icon" href="./icon_128.png">
-		<link rel="stylesheet" href="./index.css">
+        <style>
+            :root {
+                --kg-bg: rgb(25, 32, 40);
+                --kg-fg: rgb(225, 225, 245);
+                --kg-fg-darker: rgb(190, 190, 190);
+
+                --kg-primary: #1EACF4;
+
+                --kg-font: Helvetica, sans-serif;
+            }
+        </style>
+        <link rel="stylesheet" href="./custom.css">
+        <link rel="stylesheet" href="./index.css">
 	</head>
 	<body>
-		<div id="firstBlock">
-			<div id="firstPad">
-				<h1>AccessibilityPlus</h1>
-				<h3>Making the world an equal playing field.</h3>
-			</div>
-		</div>
-		<div class="medBlock" style="background-color:rgba(0,0,0,0.2);">
-			<div class="pads">
-				AccessibilityPlus is a web extension designed to make reading
-				text on websites easier for dyslexic people and elders.
-			</div>
-		</div>
-		<div class="medBlock">
-			<div class="pads" style="text-align:right;">
-				The extension allows you to change font color, font size, link color,
-				and background color.
-			</div>
-		</div>
-		<div class="medBlock" style="background-color:rgba(0,0,0,0.2);">
-			<div class="pads">
-				You could also pick from a few presets that are designed to make
-				your life much easier.
-			</div>
-		</div>
-		<div class="medBlock">
-			<div class="pads" style="text-align:center;">
-				What are you waiting for, try it today!
-				<br>
-				<br>
-				<a
-					class="noUnderlineLink"
-					href="https://microsoftedge.microsoft.com/addons/detail/accessibilityplus/njkccdinalldfhfbejhgoeilmbbcalen"
-					target="_blank">
-						<img src="./onMSFT.png" class="storeImage">
-				</a>
-				<a
-					class="noUnderlineLink"
-					href="https://chrome.google.com/webstore/detail/accessibilityplus/mkdmfebahbjekamaflbckpbhjgmfnkjo"
-					target="_blank">
-						<img src="./onChrome.png" class="storeImage">
-				</a>
-				<br>
-				<span style="font-size:1vw;">
-					or
-					<a
-						href="https://github.com/kgsensei/AccessibilityPlus"
-						target="_blank">
-							View the Source Code
-					</a>
-				</span>
-			</div>
-		</div>
-		<div class="medBlock">
-			<div style="padding:1%;font-size:1vw;text-align:center;">
-				AccessibilityPlus and associated assets are copyright &copy; 2023,
-				<a
-					href="https://kgsensei.dev"
-					target="_blank">
-						kgsensei</a>.
-			</div>
-		</div>
+        <div id="header" class="w-100">
+            <img src="./icon_128.png" id="header-icon" alt="AccessibilityPlus Logo">
+            <h1>AccessibilityPlus</h1>
+        </div>
+		<div class="d-grid w-100 center mt-4">
+            <h1 class="mt-8 h1 mb-1">AccessibilityPlus</h1>
+            <h2 class="h3 mb-8">Setting an even playing field for the visually impaired.</h2>
+        </div>
+        <div class="relative mb-8">
+            <div id="text-1" class="border border-1 radius-3 p-2">
+                Includes controls for
+                background color,
+                font color, link color,
+                font size, and font family.
+            </div>
+            <img src="./preview.png" id="img-1" alt="Image displaying the capabilities of AccessibilityPlus">
+        </div>
+        <div class="relative mb-8">
+            <div id="text-2" class="border border-1 radius-3 p-2">
+                Supported on most modern
+                web browsers. Including,
+                Firefox, Microsoft Edge,
+                and Google Chrome.
+            </div>
+            <img src="./available.png" id="img-2" alt="Image displaying the marketplaces AccessibilityPlus is provided on">
+        </div>
+        <div class="relative-sm mb-7 d-flex mx-auto center">
+            <a
+                target="_blank"
+                href="https://addons.mozilla.org/en-US/firefox/addon/accessibilityplus"
+                class="btn btn-outline btn-lg firefox p-2">Get on Firefox</a>
+            <a
+                target="_blank"
+                href="https://microsoftedge.microsoft.com/addons/detail/accessibilityplus/njkccdinalldfhfbejhgoeilmbbcalen"
+                class="btn btn-outline btn-lg edge p-2">Get on Edge</a>
+            <a
+                target="_blank"
+                href="https://chromewebstore.google.com/detail/accessibilityplus/mkdmfebahbjekamaflbckpbhjgmfnkjo"
+                class="btn btn-outline btn-lg chrome p-2">Get on Chrome</a>
+        </div>
+        <div class="relative-sm mb-3 center">
+            AccessibilityPlus and associated assets are copyright &copy; of
+            <a target="_blank" href="https://kgsensei.dev" class="link primary">kgsensei</a>. All Rights Reserved.
+        </div>
 	</body>
 </html>
